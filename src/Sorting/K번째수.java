@@ -8,7 +8,7 @@ import java.util.Arrays;
 
 public class K번째수 {
     public static void main(String[] args) {
-        
+
     }
 }
 class Solution {
