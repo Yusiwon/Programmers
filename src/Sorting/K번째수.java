@@ -6,12 +6,7 @@ import java.io.InputStreamReader;
 import java.lang.reflect.Array;
 import java.util.Arrays;
 
-public class K번째수 {
-    public static void main(String[] args) {
-
-    }
-}
-class Solution {
+class K번째수 {
     public int[] solution(int[] array, int[][] commands) {
         int[] answer = new int[commands.length];    // 정답을 담는 배열
 
