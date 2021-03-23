@@ -14,6 +14,7 @@ class 두개뽑아서더하기 {
             for (int j = i + 1; j < numbers.length; j++) {
                 int ber = numbers[j];
 
+                // 중복을 방지하기 위해서
                 if (!list.contains(num + ber)) {
                     list.add(num + ber);
                 }
