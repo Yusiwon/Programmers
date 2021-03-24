@@ -1,4 +1,4 @@
-package Hash;
+package 코테고득점Kit.Hash;
 
 public class Main {
 
