@@ -12,9 +12,10 @@ class 나누어떨어지는숫자배열 {
                 list.add(arr[i]);
             }
         }
+        // 나누어떨어지는값이 아무것도 없을때의 처리
         if (list.size() == 0) {
             list.add(-1);
-        } else {
+        } else { // 오름차순 정렬
             Collections.sort(list);
         }
         return list;
