@@ -3,7 +3,7 @@ package Level1;
 import java.util.ArrayList;
 import java.util.Collections;
 
-class Solution {
+class 나누어떨어지는숫자배열 {
     public ArrayList solution(int[] arr, int divisor) {
 
         ArrayList<Integer> list = new ArrayList<>();
