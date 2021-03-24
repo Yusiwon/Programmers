@@ -1,4 +1,4 @@
-package Sorting;
+package 코테고득점Kit.Sorting;
 
 
 import java.lang.reflect.Array;
