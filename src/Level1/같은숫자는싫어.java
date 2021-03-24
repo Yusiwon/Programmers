@@ -3,7 +3,7 @@ package Level1;
 import java.lang.reflect.Array;
 import java.util.*;
 
-public class Solution {
+public class 같은숫자는싫어{
     public ArrayList solution(int []arr) {
 
         ArrayList<Integer> list = new ArrayList<>();
