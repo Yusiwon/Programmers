@@ -1,4 +1,4 @@
-package 코테고득점Kit.Sorting;
+package Level2;
 
 import java.util.Arrays;
 import java.util.Collection;
