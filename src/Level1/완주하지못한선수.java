@@ -1,4 +1,4 @@
-package 코테고득점Kit.Hash;
+package Level1;
 
 import java.io.BufferedReader;
 import java.io.IOException;
