@@ -1,4 +1,4 @@
-package 코테고득점Kit.Brute_force;
+package Level1;
 
 import java.util.ArrayList;
 
