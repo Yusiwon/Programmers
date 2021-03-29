@@ -1,8 +1,6 @@
 package Level1;
 
-public class 쿼드압축후개수세기 {
-}
-class Solution {
+class 쿼드압축후개수세기 {
     static int[][] board;
     static int zero = 0;
     static int one = 0;
