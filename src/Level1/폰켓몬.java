@@ -1,11 +1,8 @@
 package Level1;
 
-import java.util.ArrayList;
 import java.util.HashSet;
 
-public class 폰켓몬 {
-}
-class Solution {
+class 폰켓몬 {
 
     public int solution(int[] nums) {
 
