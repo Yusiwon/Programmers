@@ -1,8 +1,7 @@
 package Level1;
 
-public class 약수의합 {
-}
-class Solution {
+
+class 약수의합 {
     public int solution(int n) {
         int answer = 0;
 
