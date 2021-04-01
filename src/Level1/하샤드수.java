@@ -1,8 +1,6 @@
 package Level1;
 
-public class 하샤드수 {
-}
-class Solution {
+class 하샤드수 {
     public boolean solution(int x) {
 
         String str = String.valueOf(x);
