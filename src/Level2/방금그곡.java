@@ -9,7 +9,7 @@ class Solution {
         String answer = "";
         m = m.replace("C#", "c").replace("D#", "d")
                 .replace("F#", "f").replace("G#", "g")
-                .replace("A#", "a");
+                .replace("A#", "a").replace("E#", "e");
 
         ArrayList<String> list = new ArrayList<>();
 
@@ -25,58 +25,47 @@ class Solution {
             int endM = Integer.parseInt(end[1]);
 
             endH -= startH;
-            endM -=startM;
+            endM -= startM;
             endM += 60 * endH;
 
             // check song
             String result = "";
             String song = info[3].replace("C#", "c").replace("D#", "d")
                     .replace("F#", "f").replace("G#", "g")
-                    .replace("A#", "a");;
+                    .replace("A#", "a").replace("E#", "e");
+            ;
             for (int j = 0; j < endM; j++) {
                 char add = song.charAt(j % song.length());
                 result += add;
             }
 
             if (result.contains(m)) {
-                String add = musicinfos[2] + "," + endM;
+                String add = info[2] + "," + endM;
                 list.add(add);
             }
         }
 
-//        // sorting and return song title
-//        if (list.size() == 0) {
-//            return "(none)";
-//        } else if(list.size() > 1){
-//            Collections.sort(list, new Comparator<String>() {
-//                @Override
-//                public int compare(String o1, String o2) {
-//                    int time1 = Integer.parseInt(o1.split(",")[1]);
-//                    int time2 = Integer.parseInt(o2.split(",")[1]);
-//
-//                    if (time1 == time2) {
-//                        return -1;
-//                    } else {
-//                        return time1 - time2;
-//                    }
-//                }
-//            });
-//
-//        }
+        // sorting and return song title
         if (list.size() == 0) {
-            return "none";
-        } else {
-            String title = list.get(0).split(",")[0];
-            return title;
+            return "(None)";
+        } else if (list.size() > 1) {
+            Collections.sort(list, new Comparator<String>() {
+                @Override
+                public int compare(String o1, String o2) {
+                    int time1 = Integer.parseInt(o1.split(",")[1]);
+                    int time2 = Integer.parseInt(o2.split(",")[1]);
+
+                    if (time1 == time2) {
+                        return -1;
+                    } else {
+                        return time2 - time1;
+                    }
+                }
+            });
         }
 
-    }
-
-    public static void main(String[] args) {
-        Solution s = new Solution();
-        String m = "ABCDEFG";
-        String[] musicinfos = {"12:00,12:14,HELLO,CDEFGAB", "13:00,13:05,WORLD,ABCDEF"};
-        System.out.println(s.solution(m, musicinfos));
+        String title = list.get(0).split(",")[0];
+        return title;
 
     }
 }
